@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>اول صفحة ويب</title>
+    <meta name="description" content="موقع لتعليم البرمجة" />
+    <meta name="keywords" content="html, css ,javascript ,php" />
+    <meta name="author" content="mohamed ibrahem" />
+    <meta http-equiv="refresh" content="s" />
+    <!--
+    <link rel="stylesheet" href="" />*****htmlبملف ال cssربط ملف ال*****
+    <style>***** htmlبشكل مباشر في ملف ال cssعشان نكتب كود *****
+    body{
+      background: red; 
+    }
+    </style> 
+    <script></script>*****htmlبشكل مباشر في ملف ال javascript عشان نكتب كود*****
+    for javascript
+   -->
+  </head>
+
+  <body>
+    <p align="center">Hi,my name is mohamed ibrahem</p>
+    <!-- *****كل واحدة هتاخد سطر لوحدها p عنصر بلوك يعني لو رصيت كذا pال*****-->
+    <br />
+    <!--
+    <code> 
+      <pre> *****المسافات بتتحسب في البراجراف*****
+       const x=10;
+       const y=5;
+       console.log(x+y);
+      </pre>
+    </code>
+    -->
+
+    <!-- 
+      *************Text formatting تنسيق النص*************
+      <span>Hi,my name is mohamed ibrahem</span>
+      الاسبان عنصر ان لاين يعني كذا سبان هيتكتبوا في سطر واحد والعناصر الانلاين اقدر اكتبها جوا التاجز
+      مثال
+      <p> Hi,<small>my name is mohamed ibrahem</small> </p>
+      <b></b> BOLD.
+      <strong></strong> Important text only.
+      <i></i> Italic.
+      <em></em> تأثير مشابه للايتاليك لكن يستخدم فقط مع الحكم او الجمل المقتبسة او العبارات المترجمة من لغات مختلفة
+      <mark></mark> بتهايلايت الكلمة
+      <u></u> تضع خط اسفل الكلمة او الجملة المختارة للشكل
+      <ins></ins> Insertd text تضع خط اسفل الكلام لكن عندما تريد اضافة كلام لمقال لكنها قليلة الاستخدام
+      <s></s> شرطة بتشطب علي الكلام للشكل
+      <del></del> بتشطب علي الكلام المحذوف مثال:متج عليه تخفيض فا بتشطب علي السعر القديم
+      <sub></sub> Subscript text بنزل الكلمة من السطر
+      <sup></sup> Superscript text برفع الكلمة فوق السطر
+    -->
+
+    <!--
+      *************Image اضافة وتعديل الصور*************
+      <image src="" alt="" title="" height="" width=""> src=source بكتب فيه مسار الصورة alt=كلام يعرض عند عدم عرض الصورة لأي سبب من الاسباب 
+        title=وهو عنوان الصورة او حتي النصوص يظهر عندما تقف عليه بالماوس
+    -->
+
+    <!--
+      *************Audio اضافة وتعديل الصوتيات************
+       اوقات في متصفحات مش بتقبل انواع معينة من امتدادات الصوت فبحط كذا امتداد لنفس الصوت
+      <audio controls loop preload="" > الكونترولز بتظهر التحكم,اللوب بتكرر الصوت باستمرار
+        <source src="music.mp3" type="audio/mpeg">
+        <source src="music.wav" type="audio/wav" >
+        <source src="music.ogg" type="audio/ogg" >
+        Your browser does not support the audio element. الرسالة دي بتكون عند عدم عرض المتصفح للصوت
+      </audio>
+    -->
+
+    <!--
+      *************Vedio اضافة وتعديل الفيديوهات************
+     <Vedio controls loop muted autoplay poster="" preload=""> الكنترولز بتظهر التحكم واللوب
+       بتكرر الفيديو والاوتوبلاي بيشغل الفيديو تلقائي لكن بيشتغل فقط مع الاتربيوت ميوت
+        والبوستر بيعمل صورة مصغرة للفيديو والبريلود بتحمل تحمل للفيديو في الموقع وعندي ليها 3 قيم 
+        1.auto=دا بيحمل تلقائي اول ما الموقع يشتغل عيبه انه بيبطئ الموقع احيانا اثناء فتحه
+        2.none=دا افضل اوبشن لأن الفيديو او الصوت بيحملوا لو دوست عليهم
+        3.metadata=ودا مش بيحمل الميديا لكن بيحمل معلومتها
+        <source src="movi.mp3" type="movi/mp4">
+        <source src="movi.wav" type="movi/webm" >
+        <source src="movi.ogg" type="movi/oog" >
+        Your browser does not support the Vedio element. الرسالة دي بتكون عند عدم عرض المتصفح للفيديو
+        <track src="en.vtt" kind="subtitels" label="english"> لوضع ترجمة علي فيديو والكايند بختار منه النوع ممكن كابشن او سابتايتل او شابترز او ميتاداتا
+        <track default src="ar.vtt" kind="subtitels" label="arabic"> والليبل بيكون اسمه اللغة والديفولت بيخلي اللغة المختارة هي اللي تبدأ تلقائي مع الفيديو
+     </vedio>
+    -->
+
+    <!--
+      *************Designing Tables انشاء الجداول*************
+      <table border="1" bgcolor=""> لانشاء الجدول
+
+        <caption> comp. salary </caption> عنوان الجدول
+       <thead> رأس الجدول
+         <tr> لانشاء الصف
+           <th> Name </th> لتمييز روؤس الاعمدة
+           <th> Age </th> 
+           <th> Salary </th>
+         </tr>
+        </thead>
+
+        <tbody> جسد الجدول
+          <tr>
+           <td> mohamed </td> لانشاء الاعمدة
+           <td rowspan="2"> 20 </td> rowspan معناها ان الصف دا هياخد مكان صفين لوحده وكل ما ازود الرقم هيضم صفوف كمان لنفسه
+           <td> 25000 </td>
+         </tr>
+        </tbody>
+
+        <tfoot> اسفل الجدول
+          <tr>
+            <td>sum</td>
+            <td colspan="2">50000</td> colspan="2" معناها ان العمود دا هياخد مكان عمودين لوحده وكل ما ازود الرقم هيضم عواميد كمان لنفسه
+          </tr>
+        </tfoot>
+
+      </table>
+    -->
+
+    <!--
+      *************Createing lists انشاء القوائم*************
+      <ul> bullets ترتيب العناصر بنقاط 
+        <li>sun</li>
+        <li>mercury</li>
+        <li>venus</li>
+        <li>earth</li>
+      </ul>
+
+      <ol type=""> Iاوi لو عايزها روماني بكتب Aاوa بكتب 1 لو عايزها ارقام وبكتب type ترتيب العناصر بأرقام او حروف انجليزية او رومانية من خلال الامر
+        <li>jupiter</li>
+        <li>saturn</li>
+        <li>uranus</li>
+        <li>neptune</li>
+
+      </ol>
+    -->
+
+    <!--
+      *************Links الراوبط*************
+      <a target="_blank" href="URL">test</a> الامر تارجت عشان افتح اللينك في صفحة جديدة (Absolute url للمواقع الخارجية) 
+      <a target="_blank" href="test.html">test</a>اخر لفتح صفحة اخري html ممكن اعمل لينك لملف (Relative url للمسارات الداخلية)
+      <a target="_blank" href="img.jpg">img</a> هنا انا بدوس عالكلمة اللينك عشان يجبلي الصورة (Relative url)
+      <a target="_blank" href="Any url or html file(جزء معين في نفس الصفحة)"> <img src="img.jpg"> </a> هنا الصورة هي اللي بقت لينك
+
+      <a href="#sec3">section3</a> اللي بحدده للسيكشن id اقدر احط لينك يستدعي سيكشن محدد من الصفحة من خلال ال
+                                                                                id ويجب كتابة رمز الهاشتاج قبل ال
+      <section id="sec3">
+        <h2>section3</h2>
+        <p>
+         Lorem ipsum dolg or sit amet 
+         consectetur adipisicing elit. Ipsam recusandae impedit culpa
+         quibusdam minus id reprehenderit eius illum sapiente dolores
+        </p>
+      </section>
+      
+      <a href="mailto:medoibra889@gmail.com">mail</a> mailto: لما ابقي عايز احط لينك يحولني دايركت للميل لازم اكتب قبل الميل 
+      <a href="tel:01005970126">phone number</a> لما ابقي عايز احط لينك يخليني اقدر اتصل برقم مباشرة
+      <a href="javascript:alert('');">java script</a> عمل لينك لكود جافاسكريبت
+      
+    -->
+
+    <!--
+      *************Form & input action method حقول وطرق ادخال البيانات*************
+     <fieldset>بتحط الفورم في مربع خاص بها fieldsetال
+      
+        <legend>Login</legend> الليجيند بتحط للفورم عنوان
+       <form action="test.php" method="get or post"> postوال getله قيمتين وهما ال method بيرسل بيانات الفورم لصفحة الباك ايند اما الاتربيوت actionالاتربيوت 
+                                                                get: البيانات المرسلة بتظهر في الكويري سترينج السيرش بار اعلي المتصفح
+                                                                post: البيانات المرسلة لا تظهر في الكويري سترينج وهذا مفيد للبيانات الحساسة
+                                                                 
+         :يوجد 23 نوع تايب وهم كالأتي   
+
+         <input type="text"> للنصوص
+         <input type="number"> للارقام
+         <input type="password"> لكلمات السر تظهر علي شكل نقاط
+         <input type="email"> للايميل
+         <input type="tel"> لأرقام الهاتف
+         button
+         checkbox
+         color
+         date
+         datetime
+         datetime-local
+         email
+         file
+         hidden
+         image
+         month
+         number
+         password
+         radio
+         range
+         reset
+         search
+         submit
+         tel
+         text
+         time
+         url
+         week
+
+         <label for="file">upload file</label>
+         <input id="file" type="file ">
+
+         <label for="color">color</label>
+         <input id="color" type="color">
+
+         <label for="range">range</label>
+         <input id="range" type="range" min="0" max="10" step="1" value="5">
+
+         <div> لتكون كل خانة في سطر خاص بها divعناصر ان لاين يجب وضعها في عنصر بلوك مثل ال formلأن عناصر ال
+           <label for="txt">username</label> لتكون كلمة يوزرنيم فعالة forوعنصر ال inputالليبل لتسمية الخانة الخاصة بنوع ال
+           <input id="txt" type="text" placeholder="username" recuired name="user"> هو اسم الفيلد اللي البيانات بتتبعت ليه في الباك ايند nameهتمنع ارسال البيانات فارغة ال recuired  بتخليني اقدر اكتب اسم الفيلد او معلومات عن الفيلد جواه placeholderال      
+         </div>
+
+         <div>
+           <label for="pass">password</label>
+           <input id="pass" type="password" placeholder="must be 8 chars and contain numbers and no spaces" recuired name="password"> هو اسم الفيلد اللي البيانات بتتبعت ليه في الباك ايند name       
+         </div>
+
+         <input type="submit" value="click, enter, اضغط هنا etc..."> لتسمية الزر valueلوضع زر ارسال البيانات وال
+        </form>
+     </feildset>
+    -->
+
+    <!--
+      ************* Radio-checkbox *************
+      <form>
+        <h2>what is your favorite language?</h2>
+        <div> الديف وظيفتها تنظيم الكود وكمان الاجابات بتكون فوق بعضها لو شيلتها هيترصوا جمب بعض
+          <input id="html" type="radio" value="a" name="q1"> علشان اعمل راديو بوكس واللي بيسمحلي علي اختيار واحد من اختيارات متعددة 
+                                                                             بختار التايب راديو والفاليو هو القيمة اللي هيبعتها المبرمج للباك ايند 
+                                                                       والنيم بيميز الاختيار لأي سؤال لأن الاختيارات لسؤال واحد بتكون نفس النيم
+          <label for="html">html</label>
+        </div>
+        <div>
+          <input id="css" type="radio" value="b" name="q1">
+          <label for="css">css</label>
+        </div>
+        <div>
+          <input id="javascript" type="radio" value="c" name="q1">
+          <label for="javascript">javascript</label>
+        </div>
+
+        ---------- checkbox ----------
+        <h2>what is your favorite language?</h2>
+        <div>
+          <input id="html" type="checkbox" value="a" name="q1">
+          <label for="html">html</label>
+        </div>
+        <div>
+          <input id="css" type="checkbox" value="b" name="q1">
+          <label for="css">css</label>
+        </div>
+        <div>
+          <input id="javascript" type="checkbox" value="c" name="q1">
+          <label for="javascript">javascript</label>
+        </div>
+      </form>
+      
+    -->
+
+    <!--
+      ************* Select-options *************
+      :عشان اعمل قائمة منسدلة بها اختيارات مثلا قائمة دول
+      <form>
+        <label for="cnt">what is your country</label>
+        <select name="country" id="cnt" multiple>والخيارات المطلوبة ctrl لأختيار اكثر من خيار من خلال الضغط علي  multiple
+          <optgroup label="arabic"> لتقسيم الاختيارات الي مجموعات 
+            <option value="egy">egypt</option>
+            <option selected value="mor">morocco</option>وسم سيليكتد بيضع هذا الاختيار هو الافتراضي ايضا مع حرية الاختيار 
+            <option value="alg">algeria</option>
+          </optgroup>
+
+          <optgroup label="westren">
+            <option value="usa">usa</option>
+            <option value="can">canada</option>
+            <option value="mex">mexico</option>
+         </optgroup>
+
+        </select>
+
+
+        <input list="language" name="lang">وتاج الداتا ليست هيتحط فيه الاوبشنات input listعشان اقدر اعمل قائمة منسدلة اوصل للاختيارات من خلال بحث هستخدم ال
+        <datalist id="language">
+          <option value="c">
+          <option value="c#">
+          <option value="python">
+          <option value="php">
+          <option value="java">
+        </datalist>
+
+        input:submit+Enter = <input type="submit" value="">
+      </form>
+
+    -->
+
+    <!--
+      ************* Buttons *************
+      <button type = "button">Button</button> هو زر عادي لأغراض مختلفة في الموقع button
+      <button type = "reset">reset</button> هو زر لمسح البيانات reset
+      <button type = "submit">submit</button> هو زر لارسال البيانات submit
+    -->
+
+    <!--
+       ************* validate textarea *************
+      <form novalidate target="_blank","_self","_parent	","_top">
+        من الكود المكتوب-validate-بتشيل اي :novalidate
+
+        _blank.....The response is displayed in a new window or tab.
+        _self.....The response is displayed in the current window.
+        _parent.....The response is displayed in the parent frame.
+        _top.....The response is displayed in the full body of the window.
+        framename.....The response is displayed in a named iframe.        
+
+        <textarea cols="20" rows="2"></textarea>واقدر اغير في الابعاد بحرية وسيظل المستخدم قادر علي تغيرها ايضا Default Value
+
+        <div>
+          <input type="text" placeholder="title" 
+          name="title" minlength="8" maxlength="20" 
+          required autofocus 
+          readonly,disabled> بيقفلوا الانبوت بتكون غير قادر علي الكتابة بداخله disabled او readonly
+            لا ترسل مع الفورم واستخدمها مع البيانات اللتي لا اريد تعديلها مثل الاسم او الايميل وهكذا disabled الفرق هو ان
+        </div>
+        <br>
+        <div>
+          <textarea name="content" placeholder="content..."    
+          rows="3" minlength="70" maxlength="100" required></textarea>
+        </div>
+        <input type="submit">       
+
+      </form> 
+    -->
+
+    <!--
+      ************* Iframe,embed,object *************
+      <iframe width="" height="" frameborder="0 or 1" scrolling="no" src="http://....."></iframe> 
+      عبارة عن نافذة يتم من خلالها تضمين موقع معين داخل موقعك لكن اغلبية المواقع ترفض التضمين iframeال
+      html او فيديو او صوت او حتي ملفات pdf واقدر اضم ملفات 
+     لم يعد يعتمد عليهم بسبب عدم توافقهم مع بعض المتصفحات embedوال objectاما ال
+     iframeيفضل استخدام ال
+      <object width="" height="" data="http://....." ></object >
+      <embed width="" height="" src="http://.....">
+
+      جاهز عشان اضمه في موقعي iframe والخاصية دي بتديني كود copy embed code يوتيوب عامل ميزة وهي
+      <iframe width="914" height="514" src="https://www.youtube.com/embed/cvNTgKw8VlY" 
+      title="كورس html كامل في فيديو واحد | تعلم html بالكامل" 
+      frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+      encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    -->
+
+    <!--
+      ************* Download & Live server *************
+      <a href="(img.jpeg)الملف وعنوانه">Dwnload image</a>لكن لسة مقدرش احملها (a)بالشكل دا انا عملت لينك للصورة من خلال وسم ال
+      <a download="اسم الملف لو عايز تغيره" href="(img.jpeg)الملف وعنوانه">Download image</a> وقتها الملف هيبقي علي سيرفير واقدر احمله (open with live server)
+       لكن لسة مش هيشتغل غير لما اعمل للملف downloadبضيف الاتريبيوت ال
+    -->
+    الحمدلله The End.
+  </body>
+</html>
